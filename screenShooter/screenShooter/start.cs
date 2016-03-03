@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace screenShooter
 {
@@ -12,7 +13,7 @@ namespace screenShooter
         [STAThread]
         static void Main(string[] args)
         {
-            Application.Run(new screenShooterFrm());
+            new ScreenShootr();
         }
     }
 }
